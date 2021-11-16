@@ -1,0 +1,99 @@
+body
+{
+    font-size: 22px;
+    background-image: url("photos/bg.jpg");
+    background-size: cover; 
+}
+fieldset
+{
+    background: url("photos/inner.jpg");
+    background-size: cover;  
+    border: none;
+    border-radius: 30px;
+    height: 650px;
+    width: 600px;
+    margin: 80px auto;
+}
+h1
+{
+    text-align: center;
+}
+.ctext
+{
+    margin: 50px 0 0 50px;  
+}
+#colour
+{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 10px;
+    text-align: center;
+}
+input[type=textbox]
+{
+    /* position: relative;
+    top: -10px; */
+    background: white;
+    width: 500px;
+    height: 80px;
+    border: solid 1px black;
+    border-radius: 10px;
+}
+.slide
+{
+    margin-left: 50px; 
+}
+/* #slider
+{
+    width: 69%;
+} */
+.section
+{
+    margin: 0 50px;
+}
+#c1
+{
+    background: none;
+}
+#c2
+{
+    background: none;
+}
+
+.toggle
+{
+    display: flex;
+    align-items: center;
+    margin: 10px 0 10px 50px;
+}
+
+.switch
+{
+    height: 30px;
+    width: 60px;
+    background: rgb(223, 208, 208);
+    border-radius: 30px;
+    padding: 5px;
+    margin: 0 10px;
+}
+.inner-circle
+{
+    height: 30px;
+    width: 30px;
+    background: white;
+    border-radius: 30px;
+    transition: all 250ms;
+}
+
+.switch.toggled > .inner-circle
+{
+    transform: translateX(30px);
+    background: rgb(36, 35, 35);
+}
+
+.unselected
+{
+    opacity: 0.55;
+}

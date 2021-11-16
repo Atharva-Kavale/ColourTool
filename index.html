@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Colour Tool</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="photos/icon.png">
+</head>
+
+<body>
+    <fieldset>
+        <h1>Lighten / Darken colour</h1>
+        <p class="ctext">Enter your colour code (Hex) : <input type="text" id="colour" onkeyup="key()" placeholder="#000000"></p>
+
+        <div class="toggle">
+            <p id="lightenText" class="c-switch unselected">Lighten</p>
+            <div id="toggleBtn" class="switch toggled">
+                <div class="inner-circle">
+                </div>
+            </div>
+            <p id="darkenText" class="c-switch ">Darken</p>
+        </div>
+        <div class="slide">
+            0% <input type="range" min="0" max="100" value="0" id="slider"> 100% = Value : <span id="val"></span>
+        </div>
+        
+        <div class="section">
+            <p>Your input colour : </p>
+            <input type="textbox" disabled id="c1">
+
+            <p>After modification : <span id="answer"></span></p> 
+            <input type="textbox" disabled id="c2">
+        </div>
+    </fieldset>
+    <script src="script.js"></script>
+</body>
+
+</html>
